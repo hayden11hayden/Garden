@@ -100,6 +100,12 @@
   <div id="left-panel">
     <div id="seed-shop">
       <h2>Seed Shop</h2>
+
+      <div>
+    <span class="shop-seed">👨</span>
+      Austin  (1$)
+  <button onclick="buySeed('austin')">Buy</button>
+</div>
       <div>
         <span class="shop-seed">🥕</span>
         Carrot Seed (10$)
@@ -170,6 +176,7 @@
       Cotton Blossom Seed  (1B$)
   <button onclick="buySeed('cottonblossom')">Buy</button>
 </div>
+      
 <hr>
 <h2 style="color:#1565c0;">Gear Shop</h2>
 <div>
@@ -246,6 +253,7 @@ const MAX_VIEW = 10;
 
 // Crop emojis and shop/inventory/plot support for all crops
 const CROP_PROPS = {
+    carrot:    { emoji: "👨", growTime: 1500,  multiHarvest: true, seedPrice: 1,     minSell: 20,    maxSell: 100,    name: "Austin" },
   carrot:    { emoji: "🥕", growTime: 2000,  multiHarvest: false, seedPrice: 10,     minSell: 15,    maxSell: 30,    name: "Carrot" },
   strawberry:{ emoji: "🍓", growTime: 5000,  multiHarvest: true,  seedPrice: 45,     minSell: 10,    maxSell: 30,    name: "Strawberry" },
   blueberry: { emoji: "🫐", growTime: 5000,  multiHarvest: true,  seedPrice: 120,    minSell: 40,    maxSell: 90,    name: "Blueberry" },
